@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-position: center;
+  font-family: "Shantell Sans", cursive;
+}
+
+:root {
+  --main-color: #f0b30f;
+}
+.theme-text {
+  color: var(--main-color);
+}
+.navbar-brand {
+  color: var(--main-color);
+}
+.act {
+  color: var(--main-color);
+  border-bottom: 2px solid var(--main-color);
+}
+.navbar ul li a:hover {
+  color: rgb(107, 190, 24) !important;
+  border-bottom: 2px solid var(--main-color);
+}
+
+.header {
+  background-image: linear-gradient(rgba(10, 10, 0, 0.5), rgb(3, 8, 0, 1)),
+    url(call-me-hangry-yzM66Y_D3Dc-unsplash.jpg);
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+
+  position: relative;
+}
+
+.waves {
+  position: absolute;
+  bottom: 0px;
+}
+
+.middle {
+  height: 80vh;
+  width: 80vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.middle h1 {
+  font-size: 70px;
+}
+.carousel-inner {
+  height: 0;
+  padding-bottom: 25%; /* this sets carousel aspect ratio (4:1 here) */
+}
+
+.carousel-item {
+  position: absolute !important; /* Bootstrap is insistent */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.carousel-item img {
+  height: 75%; /* Bootstrap handles width already */
+  object-fit: cover; /* or 'contain' if you want stretch instead of crop */
+}
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+.carousel-caption h4 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
